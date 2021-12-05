@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+	<header>
+		<nav class="header_nav">
+			<ul>
+				<li class="bold">Inicio</li>
+				<li><a href="pages/ofertas.html">Ofertas</a></li>
+				<li><a href="pages/perfil.html">Perfil</a></li>
+				<li><a href="pages/contacto.html">Contacto</a></li>
+				<li><a href="pages/ayuda.html">Ayuda</a></li>
+			</ul><br>
+		</nav>
+		<h1>¡Hola!</h1><br>
+	</header>
+
+	<main>
+		<section class="section_buscador">
+			<h2 class="section_subtitle">¿A dónde te gustaría ir?</h2>
+
+			<div class="section_icons">
+				<div><img width="35px" src="images/iconos/plane-bold.png"></div>
+				<div><img width="40px" src="images/iconos/timbre.png"></div>
+				<div><img width="40px" src="images/iconos/car.png"></div>
+				<div><img width="38px" src="images/iconos/travel.png"></div>
+				<div><img width="40px" src="images/iconos/fire.png"></div>
+			</div>
+
+			<div>
+				<form class="section_radio">
+					<div>
+						<label for="one">Ida y vuelta</label>
+						<input type="radio" id="one" name="first_item" value="1" />
+					</div>
+
+					<div>
+						<label for="two">Solo ida</label>
+						<input type="radio" id="two" name="first_item" value="2" />
+					</div>
+				</form>
+			</div>
+
+			<div class="section_grid">
+				<div>
+					<form>
+						<input class="form_origen_destino" type="text" placeholder="Origen">
+					</form>
+
+					<form>
+						<input class="form_origen_destino" type="text" placeholder="Destino">
+					</form>
+				</div>
+
+				<div>
+					<p class="section_date">Fecha</p>
+					<input class="section_date_input" type="date"><br>
+					<input class="section_date_submit" type="submit" value="Buscar">
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="grid_img">
+				<img src="images/img_index/montaña.png" class="grid_img_item" alt="Montaña">
+				<img src="images/img_index/paris.jpeg" class="grid_img_item" alt="Paris">
+				<img src="images/img_index/tailand.jpeg" class="grid_img_item" alt="Tailandia">
+				<img src="images/img_index/milan.jpeg" class="grid_img_item" alt="Milan">
+				<img src="images/img_index/hong-kong.jpeg" class="grid_img_item" alt="Hong-Kong">
+				<img src="images/img_index/disney.jpeg" class="grid_img_item" alt="Disney">
+				<img src="images/img_index/obelisco-buenos-aires.jpeg" class="grid_img_item"
+					alt="obelisco-buenos-aires">
+				<img src="images/img_index/aruba.jpeg" class="grid_img_item" alt="Aruba">
+				<img src="images/img_index/rusia.jpeg" class="grid_img_item" alt="Rusia">
+			</div>
+		</section>
+	</main>
+
+
+	<footer>
+		<p class="footer_text">¡Seguinos en nuestras redes sociales!</p>
+		<div>
+			<img width="30px" src="images/iconos/facebook-logo.png" alt="facebook-logo">
+			<img width="30px" src="images/iconos/instagram-logo.png" alt="instagram-logo">
+			<img width="30px" src="images/iconos/twitter-logo.png" alt="twitter-logo">
+		</div>
+
+		<form>
+			<p class="footer_text">Suscribite a nuestro Newsletter</p>
+			<input type="email">
+		</form>
+		<p class="footer_text">Sitio desarrollado por Emiliana Ocampo</p>
+	</footer>
+
+</body>         
+
+</html>
