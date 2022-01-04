@@ -1,0 +1,279 @@
+// index
+@media screen and (max-width: 1240px) {
+    .section_buscador {
+        height: 340px;
+        
+        .section_grid {
+            display: grid;
+            grid-template-columns: 100%;
+            
+                form input {
+                    width: 90%;
+                    margin: 20px 0 0 20px;
+                    } 
+        }
+        .section_date {
+            margin: 10px 0 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    .section_date_submit {
+        width: 45%;
+    }
+}
+    
+@media screen and (max-width: 1190px) {
+    .section_buscador {
+        height: 400px;
+        width: 70%;
+            
+        .section_grid {
+            form input {
+                width: 92%;
+                
+                    .section_date_input {
+                        width: 94%;
+                    }
+                    .section_date_submit {
+                        width: 94%;
+                    }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 670px) {
+    .section_buscador {
+        width: 70%;
+        
+        .section_grid {
+            form input {
+                width: 88%;
+            }
+            .section_date_input {
+                width: 90%;
+            }
+                .section_date_submit {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .section_radio {
+    label{
+    display: row;
+    }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .section_buscador {
+        width: 70%;
+        
+        .section_radio {
+            label{
+                display: row;
+            }
+        } 
+        
+        .section_grid {
+            form input {
+                width: 83%;
+            }
+        }
+        .section_date_input {
+            width: 85%;
+        }
+        .section_date_submit {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 347px) {
+    .section_buscador {
+        width: 70%;
+        height: 420px;
+        
+        .section_radio {
+            label{
+                display: row;
+            }
+        }  
+        
+        .section_grid {
+            form input {
+                width: 78%;
+            }
+        }
+        
+        .section_date_input {
+            width: 80%;
+        }
+        .section_date_submit {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .section_ayuda {
+        height: 170px;
+    }
+    .ayuda_submit {
+        margin: 10px 0 0 0;
+    } 
+}
+
+
+@media screen and (max-width: 500px) {
+    .section_ayuda {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section_ayuda {
+        height: 200px;
+    }
+    .ayuda_input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .section_ayuda {
+        height: 230px;
+    }
+}
+
+// ofertas
+@media screen and (max-width: 588px) {
+    .section_ayuda {
+        height: 170px;
+    }
+    .ayuda_submit {
+        margin: 10px 0 0 0;
+    } 
+}
+
+
+@media screen and (max-width: 500px) {
+    .section_ayuda {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section_ayuda {
+        height: 200px;
+    }
+    .ayuda_input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .section_ayuda {
+        height: 230px;
+    }
+}
+
+// contacto
+@media screen and (max-width: 650px) {
+    .section_formulario_contacto{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .section_ayuda {
+        height: 170px;
+    }
+    .ayuda_submit {
+        margin: 10px 0 0 0;
+    } 
+}
+
+
+@media screen and (max-width: 500px) {
+    .section_ayuda {
+        height: 200px;
+    }
+}
+
+// ayuda
+@media screen and (max-width: 588px) {
+    .section_ayuda {
+        height: 170px;
+    }
+    .ayuda_submit {
+        margin: 10px 0 0 0;
+    } 
+}
+
+
+@media screen and (max-width: 500px) {
+    .section_ayuda {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section_ayuda {
+        height: 200px;
+    }
+    .ayuda_input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .section_ayuda {
+        height: 230px;
+    }
+}
+
+// perfil
+@media screen and (max-width: 370px) {
+    .section_perfil {
+        li{
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .section_ayuda {
+        height: 170px;
+    }
+    .ayuda_submit {
+        margin: 10px 0 0 0;
+    } 
+}
+
+
+@media screen and (max-width: 500px) {
+    .section_ayuda {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section_ayuda {
+        height: 200px;
+    }
+    .ayuda_input {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 321px) {
+    .section_ayuda {
+        height: 230px;
+    }
+}
+

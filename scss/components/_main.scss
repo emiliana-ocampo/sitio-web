@@ -1,0 +1,221 @@
+//menu
+.navbar {
+    margin-bottom: 60px;
+}
+
+//mixin 
+@mixin size ($alto, $ancho, $padding) {
+    height: $alto;
+    width: $ancho;
+    padding: $padding;
+}
+
+@mixin border-radius ($radius) {
+    border-radius: $radius;
+}
+
+h1 {
+    font-size: 24px;
+    padding: 20px;
+    margin: 0 0 20px 20px;
+    color: $color-footer-dark;
+}
+
+//index
+.imagen-fondo-index {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+} 
+.section_buscador {
+    @include size (270px, 50%, 10px);
+    @include border-radius (10px);
+    margin: 0 auto;
+    margin-bottom: 200px;
+    background-color: $color-red;
+    text-align: left;
+    color: 999;
+    box-shadow: $box-shadow;
+    
+        h2{
+            font-size: 20px;
+            padding: 10px 0 10px 10px;
+        }
+        
+        .section_radio{
+            margin: 0 0 0 30px;
+    
+                label{
+                    padding: 0 30px 0 0;
+                    font-size: 14px;
+        }
+    }
+        .section_grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+    
+                form {
+                        input{
+                            @include size (40px, 250px, 8px);
+                            @include border-radius (5px);
+                            outline: none;
+                            border: solid 1px #ccc;
+                            margin: 20px 0 0 20px;
+                    }
+                } 
+        
+                .section_date {
+                    .section_date_input {
+                        @include size (40px, 250px, 8px);
+                        @include border-radius (5px);
+                        background-color: $color-white;
+                        outline: none;
+                        border: solid 1px #ccc;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: gray;
+                        margin: 20px 0 0 10px;
+                    }
+                    .boton-primario-buscador {
+                        @include size (40px, 250px, 8px);
+                        @include border-radius (5px);
+                        background-color: $color-lightblue;
+                        border: solid 1px $color-lightblue;
+                        margin: 20px 0 0 10px;
+                    }       
+                }
+        }
+}
+
+.card {
+    box-shadow: $box-shadow;
+}
+
+
+//ofertas
+.img_ofertas {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+        
+    img{
+        @include size (300px, 100%, 0);
+        @include border-radius (5px);
+        object-fit: cover;
+        filter: brightness(60%);
+        transition: all 1s;
+        
+            &:hover {
+                filter: brightness(100%);
+                transform: scale(1.05);
+            }
+    }
+}
+
+//contacto
+.imagen-fondo-contacto {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+
+.section_formulario_contacto {
+    @include size (570px, 40%, 30px);
+    @include border-radius (10px);
+    background-color: $color-lightblue;
+    box-shadow: $box-shadow;
+    color: 999;
+    margin: 0 auto;
+    
+    h2{
+        font-size: 24px;
+    }
+}
+
+//ayuda
+.section_ayuda {
+    @include size (130px, 88%, 10px);
+    @include border-radius (10px);
+    background-color: $color-red;
+    margin: 0 auto;
+    text-align: center;
+    color: 999;
+    margin-top: 120px;
+    box-shadow: $box-shadow;
+    
+        h3{
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+        form {
+            .ayuda_input {
+                @include size (40px,250px, 8px);
+                @include border-radius (5px);
+                outline: none;
+                border: solid 1px #ccc;
+            }
+            .boton {
+                @include size (40px, 150px, 8px);
+                @include border-radius (5px);
+                background-color: $color-lightblue;
+                border: solid 1px $color-lightblue;
+            }
+        }
+}
+
+.ayuda_banner{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    }
+    
+.card-ayuda {
+    @include size (200px, 90%, 30px);
+    @include border-radius (15px);
+    margin: 0 auto;
+    outline: none;
+    box-shadow: 3px 3px 3px 3px $color-box-shadow;
+        
+        &:hover {
+            background-color: $color-lightblue ;
+            }  
+        
+        .card-title {
+            font-size: 28px;
+            color: rgb(36, 36, 36);
+            font-weight: 500;
+            }
+        }
+        
+//perfil  
+.imagen-fondo-perfil {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+.section_perfil{
+    z-index: 1;
+    li{
+        @include size (60px, 350px, 0);
+        @include border-radius (10px);
+        box-shadow: $box-shadow;
+        background-color: $color-red;
+        margin: 0 auto 10px;
+        line-height: 60px;
+        text-align: center;
+        color: 999;
+        list-style-type: none;
+    
+        &:hover {
+            background-color: $color-darkred;
+            color: $color-white;
+        }
+    }
+}
+
+

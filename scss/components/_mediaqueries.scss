@@ -1,0 +1,224 @@
+// index
+@media screen and (max-width: 1240px) {
+    .section_buscador {
+        height: 340px;
+        
+        .section_grid {
+            display: grid;
+            grid-template-columns: 100%;
+            
+                form {
+                    input {
+                        width: 90%;
+                        margin: 20px 0 0 20px;
+                        } 
+                }
+            }
+        .section_date {
+            margin: 10px 0 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    .boton-primario-buscador {
+        width: 45%;
+    }
+}
+    
+@media screen and (max-width: 1190px) {
+    .section_buscador {
+        height: 400px;
+        width: 70%;
+            
+        .section_grid {
+            form {
+                input {
+                    width: 92%;
+                }
+            }  
+            .section_date_input {
+                width: 94%;
+            }
+            .boton-primario-buscador {
+                width: 94%;
+            } 
+        }
+    } 
+}
+
+
+@media screen and (max-width: 769px) {
+    .card{
+    margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .section_buscador {
+        width: 70%;
+        
+        .section_grid {
+            form {
+                input {
+                    width: 88%;
+                }
+            }
+            .section_date_input {
+                width: 90%;
+            }
+            .boton-primario-buscador {
+                width: 90%;
+            }  
+        }
+    }
+}
+
+@media screen and (max-width: 572px){
+    .col-1, .col-2, .col-3, .col-4{
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        
+            h4{
+        margin-top: 30px;
+    }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .section_radio {
+        label{
+            display: row;
+        }   
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .section_buscador {
+        width: 70%;
+        
+        .section_radio {
+            label{
+                display: row;
+            }
+        } 
+        
+        .section_grid {
+            form {
+                input {
+                    width: 83%;
+                }
+            }
+            .section_date_input {
+                width: 85%;
+            }
+            .boton-primario-buscador {
+                width: 85%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 347px) {
+    .section_buscador {
+        width: 70%;
+        height: 420px;
+        
+        .section_radio {
+            label{
+                display: row;
+            }
+        }  
+        
+        .section_grid {
+            form {
+                input {
+                    width: 78%;
+                }
+            }
+        }
+        
+        .section_date_input {
+            width: 80%;
+        }
+        .boton-primario-buscador {
+            width: 80%;
+        }
+    }
+}
+
+//ayuda
+@media screen and (max-width: 588px) {
+    .section_ayuda {
+        height: 160px;
+    }
+    .boton {
+        margin: 10px 0 0 0;
+    } 
+}
+
+
+@media screen and (max-width: 500px) {
+    .section_ayuda {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .section_ayuda {
+        height: 200px;
+        
+        .ayuda_input {
+            width: 80%;
+        }
+        
+        .boton{
+            margin-top: 10px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 321px) {
+    .section_ayuda {
+        height: 230px;
+    }
+}
+
+
+// contacto
+@media screen and (max-width: 820px) {
+    .section_formulario_contacto{
+        width: 85%;
+    }
+}
+
+
+// ayuda
+
+
+// perfil
+@media screen and (max-width: 370px) {
+    .section_perfil {
+        li{
+            width: 300px;
+        }
+    }
+}
+
+
+
+//footer
+@media screen and (max-width: 1000px) {
+    .footer_container_body {
+        flex-wrap: wrap;    
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .row .row2{
+    display: flex;
+    }
+}
+
