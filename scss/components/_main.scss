@@ -1,29 +1,41 @@
 //menu
 .navbar {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
+//mixin 
 @mixin size ($alto, $ancho, $padding) {
     height: $alto;
     width: $ancho;
     padding: $padding;
 }
 
-//mixin 
 @mixin border-radius ($radius) {
     border-radius: $radius;
 }
 
+h1 {
+    font-size: 24px;
+    padding: 20px;
+    margin: 0 0 20px 20px;
+    color: $color-footer-dark;
+}
 
 //index
+.imagen-fondo-index {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+} 
 .section_buscador {
     @include size (270px, 50%, 10px);
     @include border-radius (10px);
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 200px;
     background-color: $color-red;
     text-align: left;
     color: 999;
+    box-shadow: $box-shadow;
     
         h2{
             font-size: 20px;
@@ -74,6 +86,10 @@
         }
 }
 
+.card {
+    box-shadow: $box-shadow;
+}
+
 
 //ofertas
 .img_ofertas {
@@ -94,16 +110,23 @@
         
             &:hover {
                 filter: brightness(100%);
-                transform: scale(1.10);
+                transform: scale(1.05);
             }
     }
 }
 
 //contacto
+.imagen-fondo-contacto {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+
 .section_formulario_contacto {
     @include size (570px, 40%, 30px);
     @include border-radius (10px);
     background-color: $color-lightblue;
+    box-shadow: $box-shadow;
     color: 999;
     margin: 0 auto;
     
@@ -121,6 +144,7 @@
     text-align: center;
     color: 999;
     margin-top: 120px;
+    box-shadow: $box-shadow;
     
         h3{
             font-size: 18px;
@@ -168,11 +192,18 @@
             }
         }
         
-//perfil        
+//perfil  
+.imagen-fondo-perfil {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
 .section_perfil{
+    z-index: 1;
     li{
         @include size (60px, 350px, 0);
         @include border-radius (10px);
+        box-shadow: $box-shadow;
         background-color: $color-red;
         margin: 0 auto 10px;
         line-height: 60px;
