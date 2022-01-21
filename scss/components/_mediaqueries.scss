@@ -1,4 +1,4 @@
-// index
+/*index*/
 @media screen and (max-width: 1240px) {
     .section_buscador {
         height: 340px;
@@ -27,6 +27,9 @@
 }
     
 @media screen and (max-width: 1190px) {
+    .imagen-fondo-index {
+        visibility: hidden;
+    }
     .section_buscador {
         height: 400px;
         width: 70%;
@@ -37,12 +40,14 @@
                     width: 92%;
                 }
             }  
-            .section_date_input {
-                width: 94%;
+            .section_date{
+                .section_date_input {
+                    width: 94%;
+                }
+                .boton-primario-buscador {
+                    width: 94%;
+                } 
             }
-            .boton-primario-buscador {
-                width: 94%;
-            } 
         }
     } 
 }
@@ -64,13 +69,22 @@
                     width: 88%;
                 }
             }
-            .section_date_input {
-                width: 90%;
+            .section_date{
+                .section_date_input {
+                    width: 90%;
+                }
+                .boton-primario-buscador {
+                    width: 90%;
+                }  
             }
-            .boton-primario-buscador {
-                width: 90%;
-            }  
         }
+    }
+    .footer_container_body {
+        display: flex;
+        
+            .col-1, .col-2, .col-3, .col-4 {
+                margin: 0 auto;
+            }
     }
 }
 
@@ -94,7 +108,7 @@
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 460px) {
     .section_buscador {
         width: 70%;
         
@@ -110,11 +124,13 @@
                     width: 83%;
                 }
             }
-            .section_date_input {
-                width: 85%;
-            }
-            .boton-primario-buscador {
-                width: 85%;
+            .section_date{
+                .section_date_input {
+                    width: 85%;
+                }
+                .boton-primario-buscador {
+                    width: 85%;
+                }
             }
         }
     }
@@ -148,7 +164,33 @@
     }
 }
 
-//ayuda
+/*ofertas*/
+@media screen and (max-width: 420px) {
+    .img_ofertas {
+        position: relative;
+        
+        figure {
+            img {
+                position: relative;
+            }
+            .capa {
+                position: absolute;
+                opacity: 1;
+                visibility: visible;
+                background: rgba(36, 36, 36, 0.7);
+                h3{
+                    margin-top: 100px;
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        } 
+    }
+}
+
+/*ayuda*/
 @media screen and (max-width: 588px) {
     .section_ayuda {
         height: 160px;
@@ -187,18 +229,23 @@
 }
 
 
-// contacto
+/*contacto*/
 @media screen and (max-width: 820px) {
+    .imagen-fondo-contacto {
+        visibility: hidden;
+    }
     .section_formulario_contacto{
         width: 85%;
     }
 }
 
 
-// ayuda
-
-
-// perfil
+/*perfil*/
+@media screen and (max-width: 720px) {
+    .imagen-fondo-perfil{
+        visibility: hidden;
+    }
+}
 @media screen and (max-width: 370px) {
     .section_perfil {
         li{
@@ -209,16 +256,26 @@
 
 
 
-//footer
-@media screen and (max-width: 1000px) {
+/*footer*/
+@media screen and (max-width: 1150px) {
     .footer_container_body {
         flex-wrap: wrap;    
     }
 }
 
-@media screen and (max-width: 750px) {
-    .row .row2{
-    display: flex;
+@media screen and (max-width: 830px) {
+    .footer_container_body {
+        .col-3 {
+            margin-top: 20px;
+        }
+        
+        .col-4 {
+            margin-top: 20px;
+            
+            .row .row2{
+                display: flex;
+                }
+        }
     }
 }
 

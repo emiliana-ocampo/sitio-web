@@ -1,9 +1,9 @@
-//menu
+/*menu*/
 .navbar {
     margin-bottom: 60px;
 }
 
-//mixin 
+/*mixin*/ 
 @mixin size ($alto, $ancho, $padding) {
     height: $alto;
     width: $ancho;
@@ -15,13 +15,25 @@
 }
 
 h1 {
-    font-size: 24px;
-    padding: 20px;
-    margin: 0 0 20px 20px;
+    font-size: 38px;
     color: $color-footer-dark;
+    text-align: center;
+    letter-spacing: 0.40em;
+    
+        p {
+            margin: 0 0 5px 0;  
+        }
 }
 
-//index
+h2 {
+    font-size: 16px;
+    margin: 0 0 50px 0;
+    color: $color-gray;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
+
+/*index*/
 .imagen-fondo-index {
     z-index: -1;
     position: absolute;
@@ -37,7 +49,7 @@ h1 {
     color: 999;
     box-shadow: $box-shadow;
     
-        h2{
+        h3{
             font-size: 20px;
             padding: 10px 0 10px 10px;
         }
@@ -88,10 +100,22 @@ h1 {
 
 .card {
     box-shadow: $box-shadow;
+    margin: 0 auto;
+    
+        .card-body {
+            text-align: center;
+            
+            .btn {
+                justify-items: center;
+                text-align: center;
+                background-color: $color-lightblue;
+                width: 100%;
+            }
+        }
 }
 
 
-//ofertas
+/*ofertas*/
 .img_ofertas {
     width: 80%;
     display: grid;
@@ -100,22 +124,56 @@ h1 {
     margin: 0 auto;
     flex-wrap: wrap;
     grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
         
-    img{
-        @include size (300px, 100%, 0);
-        @include border-radius (5px);
-        object-fit: cover;
-        filter: brightness(60%);
-        transition: all 1s;
-        
-            &:hover {
-                filter: brightness(100%);
-                transform: scale(1.05);
-            }
-    }
+        figure {
+            position: relative;
+            @include size (300px, 100%, 0);
+            @include border-radius (5px);
+            overflow: hidden;
+            box-shadow: $box-shadow;
+            cursor: pointer;
+            
+                &:hover > .capa {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            
+                img{
+                    @include size (300px, 100%, 0);
+                    width: 100%;
+                    transition: all 500ms ease-out;
+                    object-fit: cover;
+                }
+                
+                .capa{
+                    position: absolute;
+                    top: 0;
+                    @include size (100%, 100%, 0);
+                    background: rgba(36, 36, 36, 0.9);
+                    transition: all 500ms ease-out;
+                    opacity: 0;
+                    visibility: hidden;
+                    text-align: center;  
+                    
+                        h3{
+                            margin-top: 60px;
+                            margin-bottom: 10px;
+                            color: white;
+                            font-size: 60px;
+                        }
+                        
+                        p{
+                            color: white;
+                            font-size: 16px;
+                            margin: 0 auto;
+                        }
+                }
+        }
 }
 
-//contacto
+/*contacto*/
 .imagen-fondo-contacto {
     z-index: -1;
     position: absolute;
@@ -130,12 +188,12 @@ h1 {
     color: 999;
     margin: 0 auto;
     
-    h2{
+    h3{
         font-size: 24px;
     }
 }
 
-//ayuda
+/*ayuda*/
 .section_ayuda {
     @include size (130px, 88%, 10px);
     @include border-radius (10px);
@@ -175,24 +233,46 @@ h1 {
     }
     
 .card-ayuda {
-    @include size (200px, 90%, 30px);
+    @include size (200px, 90%, 10px);
     @include border-radius (15px);
+    background-color: $color-lightblue;
     margin: 0 auto;
     outline: none;
     box-shadow: 3px 3px 3px 3px $color-box-shadow;
+    display: flex;
+    align-items: center;
         
         &:hover {
-            background-color: $color-lightblue ;
+            background-color: $color-lightred;
             }  
         
-        .card-title {
-            font-size: 28px;
-            color: rgb(36, 36, 36);
-            font-weight: 500;
+        .card-body {
+            display: flex;
+            align-items: center;
+            
+            img {
+                width: 70px;
+                height: 70px;  
+                margin: 0 40px 0 0;
+            }
+            .texto{
+                color: rgb(36, 36, 36);
+                text-align: justify-all;
+                justify-content: center;
+                align-items: center;
+                
+                .card-title {
+                    font-size: 28px;
+                    font-weight: 500;
+                    }
+                .card-text {
+                    font-size: 16px;
+                }
             }
         }
+    }
         
-//perfil  
+/*perfil*/  
 .imagen-fondo-perfil {
     z-index: -1;
     position: absolute;

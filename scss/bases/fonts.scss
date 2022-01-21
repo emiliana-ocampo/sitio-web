@@ -1,0 +1,19 @@
+@font-face {
+    font-family: mouser;
+    src: url(../fonts/Mouser.otf);
+}  
+
+h1 {
+    font-family: mouser;
+}
+
+/*ofertas*/
+.img_ofertas {
+    figure {
+        .capa{
+            h3{
+                font-family: mouser;
+            }
+        }
+    }
+}
