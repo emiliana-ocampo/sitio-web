@@ -96,8 +96,10 @@ footer{
                 padding: 20px;
                 
                     .copyright{
-                        color:#c7c7c7;
-                        font-size: 12px;
+                        p{
+                            color:#c7c7c7;
+                            font-size: 12px;
+                        }
                     }
             }
         }
